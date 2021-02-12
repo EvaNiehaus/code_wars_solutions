@@ -1,0 +1,9 @@
+https://www.codewars.com/kata//564a6486c2070faee6000011
+
+Help Timmy remove undefined values from his array, you are modifing a callback function which he uses on each element on his array.
+
+function isUndefined(value) {
+  if (value === undefined) return true;
+  else return false;
+}
+
