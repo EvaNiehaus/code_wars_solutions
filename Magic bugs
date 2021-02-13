@@ -1,0 +1,34 @@
+https://www.codewars.com/kata//56ccad525f907dc238000004
+
+There are some bug in this code. If you fix it, the function will return an object.
+
+function magic(input)
+{
+  if (typeof input === undefined){
+    return
+    {
+        bar: "hello"
+    };
+  }
+  else{
+    return
+    {
+        bar: "world"
+    };
+  }
+}
+
+
+SolutionÖ
+
+function magic(input) {
+  if (typeof input === 'undefined') {
+    return {
+        bar: "hello"
+    };
+  } else {
+    return {
+        bar: "world"
+    };
+  }
+}
