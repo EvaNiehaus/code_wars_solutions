@@ -1,0 +1,8 @@
+https://www.codewars.com/kata//5799a2d13467dbc64900094b
+
+What type of arguments?
+Write a function that returns the type of its input.
+
+function checkType(value) {  
+  return typeof value ;
+}
