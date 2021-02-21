@@ -1,0 +1,7 @@
+https://www.codewars.com/kata//56426b4e971f01fd2f00005b
+
+Create a Function that takes one parameter and returns its square root rounded to 5 decimal places. You are not allowed to use the Math.sqrt() or the Math.pow() methods.
+
+function squareRoot(x) {
+   return parseFloat((x ** 0.5).toFixed(5));
+}
