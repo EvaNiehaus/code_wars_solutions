@@ -1,0 +1,11 @@
+https://www.codewars.com/kata//56f3f6a82010832b02000f38
+
+  Your task is to shorten the code as much as possible. Note that submitting the given code will not work because there is a character limit of 137.
+
+I'll give you a few hints:
+
+The title itself is a hint - if you're not sure what to do, always research any terminology in this description that you have not heard of!
+Don't you think the whole "You're a(n) <insert_something_here>" is very repetitive? ;) Perhaps we can shorten it?
+Write everything in one line, \n and other whitespaces counts.
+
+unction describeAge(a){let s="You're a(n)";return a<=12?`${s} kid`:a>=13&&a<=17?`${s} teenager`:a<=64?`${s} adult`:`${s} elderly`}
