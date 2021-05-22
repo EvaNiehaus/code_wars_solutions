@@ -1,0 +1,21 @@
+https://www.codewars.com/kata//5f7b1a82be51af00105c82bd
+
+Given a non-negative integer number represented as a string, which can be arbitrary large. Detect whether it is divisible by 9?
+
+e.g
+
+0 -> true  
+7 -> false  
+9 -> true  
+18 -> true  
+19 -> false  
+777777777777777777777777777777777777777777777 -> true
+
+function divBy9(ns){
+  let sum = 0;
+  for (let digit of ns) {
+    console.log(digit)
+    sum += +digit;
+  }
+  return  sum % 9 === 0;   
+}
