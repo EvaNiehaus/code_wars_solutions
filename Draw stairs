@@ -1,0 +1,17 @@
+https://www.codewars.com/kata//5b4e779c578c6a898e0005c5
+
+Given a number n, draw stairs using the letter "I", n tall and n wide, with the tallest in the top left.
+
+For example n = 3 result in:
+
+"I\n I\n  I"
+
+function drawStairs(n) {
+  let  s = ' ';
+  let str = '';
+    for(let i = 1; i <= n; i++) {// 1//2//3//4
+      str = str + s.repeat(i - 1) + "I\n"; //"I\n" // "I\n  I\n"//"I\n  I\n  I\n"
+      
+    }
+  return str.slice(0, -1);
+}
