@@ -1,0 +1,23 @@
+https://www.codewars.com/kata//596549c7743cf369b900021b
+
+Your mission, should you choose to accept it, is to write a function that counts the number of sets of twin primes from 1 to n.
+
+If n is wrapped by twin primes (n-1 == prime && n+1 == prime) then that should also count even though n+1 is outside the range.
+
+function isPrime(n){
+  if(n <= 1) return false;
+  for(let i = 2; i <= Math.round(n ** 0.5); i++){
+   if(n % i === 0) return false;
+  }
+  return true;
+}
+
+function twinPrime(n) {
+  let count = 0;
+  for(let i  = 1; i < n; i++){
+    if(isPrime (i) && isPrime(i + 2)){
+      count++;
+    }
+  }
+  return count;
+} 
