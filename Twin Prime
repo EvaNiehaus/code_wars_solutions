@@ -1,0 +1,17 @@
+https://www.codewars.com/kata//59b7ae14bf10a402d40000f3
+
+A twin prime is a prime number that differs from another prime number by 2. Write a function named is_twin_prime which takes an int parameter and returns true if it is a twin prime, else false.
+
+function isPrime(n){
+  if(n <= 1) return false;
+    for(let i = 2; i <= Math.round(n ** 0.5); i++) {
+        if(n % i === 0) return false;
+    }
+  return true;
+}
+
+
+function isTwinPrime(n){
+ return isPrime(n) && (isPrime(n - 2) || isPrime (n + 2 ))
+                          
+}
