@@ -1,0 +1,7 @@
+https://www.codewars.com/kata//54c27a33fb7da0db0100040e
+
+Given an integral number, determine if it's a square number:
+
+var isSquare = function(n){
+  return Number.isInteger(n ** 0.5); 
+}
