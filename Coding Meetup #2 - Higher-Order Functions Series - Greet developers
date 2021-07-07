@@ -1,0 +1,17 @@
+https://www.codewars.com/kata//58279e13c983ca4a2a00002a
+
+
+You will be given an array of objects (associative arrays in PHP) representing data about developers who have signed up to attend the next coding meetup that you are organising.
+
+Your task is to return an array where each object will have a new property 'greeting' with the following string value:
+
+Hi < firstName here >, what do you like the most about < language here >?
+
+function greetDevelopers(list) {
+  //list = list.map(el => `Hi ${el.firstName}, what do you like the most about ${el.language}?`);
+  for(let el of list){
+    el.greeting = `Hi ${el.firstName}, what do you like the most about ${el.language}?`;
+  }
+return list;
+}
+
