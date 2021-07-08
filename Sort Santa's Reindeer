@@ -1,0 +1,21 @@
+https://www.codewars.com/kata//52ab60b122e82a6375000bad
+
+Sort Santa's Reindeer
+Write a function that accepts a sequence of Reindeer names, and returns a sequence with the Reindeer names sorted by their last names.
+
+Notes:
+It's guaranteed that each string is composed of two words
+In case of two identical last names, keep the original order
+
+function compare(a, b){
+  a = a.split(' ')[1];
+  b = b.split(' ')[1];
+  if(a >= b) return 1;
+  else return -1;
+   } 
+  
+
+
+function sortReindeer(reindeerNames) {
+  return reindeerNames.sort(compare);
+}
