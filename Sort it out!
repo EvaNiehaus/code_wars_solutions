@@ -1,0 +1,15 @@
+https://www.codewars.com/kata//58d12885d9e7e6221c00005c
+
+You've spent the last few hours entering your film collection into an array of objects where each film is an object with a "film" and "rating" property, where "film" is the title and "rating" is an integer on a scale from 1 to 10, as below:
+
+var filmCollection = [{film: "Nausicaa of the Valley of the Wind", rating: 7}, {film: "Whisper of the Heart", rating: 6}, {film: "Spirited Away", rating: 8}, {film: "Kiki's Delivery Service", rating: 7}, {film: "Castle in the Sky", rating: 7}]
+After finishing, you realise that you want the films to be sorted in descending order from highest rating to lowest, and alphabetically within that. Luckily, you decided to forgo using special characters in the titles of the films and so you only have to deal with the 26 characters of the English alphabet. (upper and lower-case)
+
+Write a function that takes an array as an argument and returns a new sorted array.
+
+
+
+function sortCollection(array){
+  if(!array || array.length === 0) return array;
+   return array.sort((a, b) => a.rating === b.rating ? (a.film > b.film ? 1 : -1) : b.rating - a.rating);
+}
