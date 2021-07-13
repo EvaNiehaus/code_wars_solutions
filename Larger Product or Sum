@@ -1,0 +1,22 @@
+https://www.codewars.com/kata//5c4cb8fc3cf185147a5bdd02
+
+For this Kata you will be given an array of numbers and another number n. You have to find the sum of the n largest numbers of the array and the product of the n smallest numbers of the array, and compare the two.
+
+If the sum of the n largest numbers is higher, return "sum"
+If the product of the n smallest numbers is higher, return "product"
+If the 2 values are equal, return "same"
+
+Note The array will never be empty and n will always be smaller than the length of the array.
+
+function sumOrProduct(array, n) {
+  let sum = 0;
+  let p = 1;
+  array.sort((a, b) => a - b);
+  for(let i = 0; i < n; i++){
+    p = p * array[i];
+  }
+  for(let i  = array.length - n; i < array.length; i++){
+    sum = sum + array[i];  
+    }
+  return sum > p ? "sum" : p > sum ? "product" : "same";
+} 
