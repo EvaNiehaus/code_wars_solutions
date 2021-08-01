@@ -1,0 +1,11 @@
+https://www.codewars.com/kata//559f860f8c0d6c7784000119
+
+You have a quiver of arrows, but some have been damaged. The quiver contains arrows with an optional range information (different types of targets are positioned at different ranges), so each item is an arrow.
+You need to verify that you have some good ones left, in order to prepare for battle:
+
+anyArrows([{range: 5}, {range: 10, damaged: true}, {damaged: true}]
+
+function anyArrows(arrow){
+  return arrow.some(arrow => !arrow.damaged);
+}
+ 
