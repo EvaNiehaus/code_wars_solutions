@@ -1,0 +1,5 @@
+https://www.codewars.com/kata//57f780909f7e8e3183000078
+
+Given a non-empty array of integers, return the result of multiplying the values together in order.
+
+const grow = x => x.sort((a,b)=> a - b).reduce((acc, curr)=> acc * curr, 1);
